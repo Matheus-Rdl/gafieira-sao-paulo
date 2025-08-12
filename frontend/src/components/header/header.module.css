@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "TheBoldFont";
+  src: url(../../fonts/TheBoldFont/TheBoldFont.woff2) format("woff2"),
+    url(../../fonts/TheBoldFont/TheBoldFont.woff) format("woff"),
+    url(../../fonts/TheBoldFont/TheBoldFont.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  height: 120px;
+  width: 95%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2.5%;
+}
+
+.header p {
+  margin: 0;
+  text-align: center;
+}
+
+.header .headerTitle {
+  font-size: 32px;
+  font-family: "TheBoldFont", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #ff7700;
+  text-shadow: 1.5px 1.5px black;
+}
+
+.header .headerSubtitle {
+  font-size: 26px;
+  font-family: "TheBoldFont", sans-serif;
+  color: #fafafa;
+  text-shadow: 1.5px 1.5px black;
+}
+
+.headerIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerIcons p {
+  font-size: 20px;
+}
+
+.headerIcons svg {
+  font-size: 38px;
+  color: #800100;
+}
