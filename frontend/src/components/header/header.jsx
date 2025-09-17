@@ -5,11 +5,11 @@ export default function Header () {
   return (
     <header className={styles.header}>
       <div>
-        <p className={styles.headerTitle}>Gafieira São Paulo</p>
-        <p className={styles.headerSubtitle}>Pety & Vanesinha</p>
+        <h1 className={styles.headerTitle}>Gafieira São Paulo</h1>
+        <h2 className={styles.headerSubtitle}>Pety & Vanesinha</h2>
       </div>
       <div className={styles.headerIcons}>
-        <p>Entre em contato</p>
+        <h3>Entre em contato</h3>
         <div>
           <PiWhatsappLogoDuotone />
           <PiInstagramLogoDuotone />

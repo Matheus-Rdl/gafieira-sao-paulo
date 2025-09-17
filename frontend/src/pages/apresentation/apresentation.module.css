@@ -1,0 +1,96 @@
+.apresentation {
+  margin-block: 2em;
+  padding: 0 0 0 15%;
+}
+
+.imgExample {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -120px;
+  margin-bottom: 1em;
+  height: 200px;
+  background-color: #ff7700;
+  border-radius: 1.5em;
+}
+
+.apresentationTitle {
+  width: 100;
+  text-align: center;
+  color: #1eb483;
+  text-shadow: 1px 1px #800100;
+  margin: 0 15% 1em 0;
+}
+
+.apresentationContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentationCardContent {
+  display: flex;
+  position: relative;
+  gap: 2em;
+}
+
+.textApresentation {
+  width: 40%;
+}
+
+.textApresentation p{
+  font-size: large;
+}
+
+.videoApresentation {
+  border-radius: 2em;
+}
+
+/*
+
+.videoApresentationUp{
+  width: 100%;
+  opacity: 0.7;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+  clip-path: polygon(0 30%, 100% 0, 100% 50%, 0 300%, 100% 90%, 30% 100%, 0 -50%);
+  
+}
+
+.textApresentationDown{
+  width: 50%;
+}
+
+.videoApresentationDown{
+  width: 100%;
+  opacity: 1;
+  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 30%, 100% 50%, 100% 90%, 80% 100%, 0 80%);
+  
+}
+
+*/
+
+@media screen and (max-width: 1000px) {
+  .apresentation {
+    padding: 0 0 0 5%;
+  }
+  .apresentationTitle {
+    margin: 0 5% 1em 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textApresentation {
+    margin-top: 250px;
+    width: 100%;
+  }
+  
+  .apresentationCardContent{
+    flex-direction: row;
+  }
+}
+

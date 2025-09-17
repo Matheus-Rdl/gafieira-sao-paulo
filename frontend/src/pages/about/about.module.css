@@ -1,0 +1,104 @@
+.about {
+  margin-block: 6em;
+  padding: 0 15%;
+}
+
+.aboutTitle {
+  text-align: center;
+  color: #800100;
+}
+
+.aboutTeachers {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPety,
+.aboutVan {
+  width: 60%;
+}
+
+.aboutPetyText,
+.aboutVanText{
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutPetyText img,
+.aboutVanText img {
+  display: none;
+  width: 50%;
+  height: fit-content;
+  min-width: 170px;
+  max-width: 230px;
+}
+
+.aboutPety h3,
+.aboutVan h3 {
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.aboutPetyText p,
+.aboutVanText p {
+  text-align: center;
+  font-size: large;
+}
+
+.aboutImgCouple {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImgCouple img {
+  width: 100%;
+}
+
+.aboutText p {
+  font-size: large;
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* Tablets (até ~1024px) */
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 0 5%;
+  }
+}
+
+/* Smartphones médios (até ~768px) */
+@media screen and (max-width: 768px) {
+  .aboutImgCouple,
+  .aboutImgCouple img {
+    display: none;
+  }
+
+  .aboutTeachers {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+  }
+
+  .aboutPety,
+  .aboutVan {
+    width: 100%;
+  }
+
+  .aboutPetyText img,
+  .aboutVanText img {
+    display: block;
+  }
+
+  .aboutPetyText p {
+    text-align: left;
+    width: 50%;
+  }
+
+  .aboutVanText p {
+    text-align: right;
+    width: 50%;
+  }
+}
