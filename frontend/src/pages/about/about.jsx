@@ -3,13 +3,39 @@ import styles from "./about.module.css";
 export default function About() {
   return (
     <div className={`${styles.about}`}>
+      <div className={styles.aboutContainer}>
+        <svg
+          className={styles.aboutSvgLarge}
+          viewBox="0 0 1440 510"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="
+              M 1440 0 L 1440 124 C 1345 149 1383 225 1229 269 C 1089 314 1114 380 825 451 C 645 488 457 536 290 469 C 158 427 39 439 0 471 L 0 380 C 57 398 108 280 238 336 C 376 433 629 421 808 324 C 967 197 1182 301 1235 203 C 1314 38 1376 90 1440 0 Z
+            "
+            fill="#1eb483"
+          />
+        </svg>
+        <svg
+          className={styles.aboutSvgSmall}
+          viewBox="0 0 1000 500"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="
+              M 1440 0 L 1440 124 C 1345 149 1383 225 1229 269 C 1089 314 1114 380 825 451 C 645 488 457 536 290 469 C 158 427 39 439 0 471 L 0 380 C 57 398 104 354 225 381 C 376 433 629 421 808 324 C 967 197 1182 301 1235 203 C 1314 38 1376 90 1440 0 Z
+            "
+            fill="#1eb483"
+          />
+        </svg>
+      </div>
       <h1 className={`${styles.aboutTitle} title-section`}>Quem somos nós</h1>
 
       <div className={styles.aboutTeachers}>
         <div className={styles.aboutPety}>
           <div>
             <h3>
-              Pety <br/> (Thiago Peterson)
+              Pety <br /> (Thiago Peterson)
             </h3>
             <div className={styles.aboutPetyText}>
               <p>
@@ -29,7 +55,7 @@ export default function About() {
         <div className={styles.aboutVan}>
           <div>
             <h3>
-              Vanesinha <br/> (Vanessa Macedo)
+              Vanesinha <br /> (Vanessa Macedo)
             </h3>
             <div className={styles.aboutVanText}>
               <img src="../../public/woman-exemplo-2.png" alt="" />

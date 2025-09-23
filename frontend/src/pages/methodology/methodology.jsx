@@ -49,9 +49,6 @@ export default function Methodology() {
   */
   return (
     <div className={`${styles.methodology}`}>
-      <div className={styles.methodologyContainer}>
-
-      </div>
       <h1 className={`${styles.methodologyTitle} title-section`}>
         Nossa metodologia
       </h1>
@@ -71,6 +68,13 @@ export default function Methodology() {
           </p>
         </div>
         <div className={styles.methodologyTextRight}>
+          <div className={styles.methodologyContainer}>
+            <svg
+              className={styles.methodologySvgLarge}
+              viewBox="0 0 1000 900"
+              preserveAspectRatio="none"
+            ></svg>
+          </div>
           <img src="../../public/black-screen.jpg" alt="" />
           <p>
             Para iniciantes, buscamos incentivar a<strong>construção</strong> de

@@ -1,12 +1,25 @@
+.methodologyContainer{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  /*border: 2px black solid;*/
+  z-index: -1;
+}
+
+.methodologySvgLarge{
+
+}
 
 .methodology {
   margin-block: 6em;
   padding: 0 10%;
+  position: relative;
 }
 
 .methodologyTitle {
   text-align: center;
-  color: #1eb483;
+  color: #ff7700;
   text-shadow: 1px 1px black;
   margin-bottom: 0.5em;
 }

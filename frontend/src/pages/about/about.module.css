@@ -1,6 +1,26 @@
+.aboutContainer{
+  width: 100%;
+  height: 60%;
+  left: 0;
+  bottom: -20%;
+  position: absolute;
+  /*border: 2px black solid;*/
+  z-index: -1;
+}
+
+.aboutSvgLarge, .aboutSvgSmall{
+  width: 100%;
+  height: 100%; 
+}
+
+.aboutSvgSmall{
+  display: none;
+}
+
 .about {
   margin-block: 6em;
   padding: 0 15%;
+  position: relative;
 }
 
 .aboutTitle {
@@ -57,7 +77,14 @@
   width: 100%;
 }
 
+.aboutText{ 
+  background-color: rgb(250, 240, 202, 0.5);
+  padding: .1em 1em;
+  border-radius: 1em;
+}
+
 .aboutText p {
+  display: inline-block; 
   font-size: large;
   text-align: center;
   margin: 1em 0;
@@ -102,6 +129,13 @@
   .aboutVanText p {
     text-align: right;
     width: 50%;
+  }
+
+  .aboutSvgLarge{
+    display: none;
+  }
+  .aboutSvgSmall{
+    display: block;
   }
 }
 
