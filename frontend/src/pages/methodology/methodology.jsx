@@ -49,6 +49,9 @@ export default function Methodology() {
   */
   return (
     <div className={`${styles.methodology}`}>
+      <div className={styles.methodologyContainer}>
+
+      </div>
       <h1 className={`${styles.methodologyTitle} title-section`}>
         Nossa metodologia
       </h1>
@@ -76,7 +79,7 @@ export default function Methodology() {
             "balanço", como elemento central na construção do Samba de Gafieira.
             Gradualmente, introduzimos os principais movimentos do repertório,
             sempre deixando clara a importância dos
-            <strong>fundamentos</strong> para a execução do repertório (como o
+            <strong> fundamentos</strong> para a execução do repertório (como o
             "balanço", torção, postura, conexão e amortecimento). À medida que
             os alunos melhoram sua <strong>consciência corporal</strong> e
             aprendem os principais movimentos da dança, adicionamos

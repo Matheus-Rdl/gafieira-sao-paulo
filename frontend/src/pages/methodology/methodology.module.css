@@ -1,3 +1,4 @@
+
 .methodology {
   margin-block: 6em;
   padding: 0 10%;
@@ -21,17 +22,17 @@
   width: 60%;
   height: fit-content;
   max-width: 600px;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
-.methodologyTextLeft img{
-  rotate: 5deg;
+.methodologyTextLeft img {
+  rotate: 2.5deg;
   margin: 0 0 1em 2em;
   float: right;
 }
 
-.methodologyTextRight img{
-  rotate: -5deg;
+.methodologyTextRight img {
+  rotate: -2.5deg;
   margin: 0 2em 1em 0;
   float: left;
 }
@@ -56,23 +57,22 @@
 }
 
 @media screen and (max-width: 626px) {
+  .methodologyTextLeft img,
+  .methodologyTextRight img {
+    width: 90%;
+    margin: 0 5% 2em 5%;
+  }
 
-.methodologyTextLeft img,
-.methodologyTextRight img {
-  width: 90%;
-  margin: 0 5% 2em 5%;
-}
+  .methodologyTextLeft img {
+    rotate: 2deg;
+  }
 
-.methodologyTextLeft img{
-  rotate: 2.5deg;
-}
+  .methodologyTextRight img {
+    rotate: -2deg;
+  }
 
-.methodologyTextRight img{
-  rotate: -2.5deg;
-}
-
-.methodologyTextLeft p,
-.methodologyTextRight p {
-  text-align: center;
-}
+  .methodologyTextLeft p,
+  .methodologyTextRight p {
+    text-align: center;
+  }
 }

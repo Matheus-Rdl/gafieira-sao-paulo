@@ -1,6 +1,25 @@
+.apresentationContainer {
+  width: 100%;
+  height: 135%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.apresentationSvgLarge, .apresentationSvgSmall, .apresentationSvgVerySmall {
+  width: 100%;
+  height: 100%; /* tira espaços extras que podem surgir */
+}
+
+.apresentationSvgSmall, .apresentationSvgVerySmall{
+  display: none;
+}
+
+
 .apresentation {
   margin-block: 2em;
   padding: 0 0 0 15%;
+  position: relative;
 }
 
 .imgExample {
@@ -79,7 +98,13 @@
     padding: 0 0 0 5%;
   }
   .apresentationTitle {
-    margin: 0 5% 1em 0;
+    margin: 0 5% 1em;
+  }
+  .apresentationSvgLarge{
+    display: none;
+  }
+  .apresentationSvgSmall{
+    display: block;
   }
 }
 
@@ -91,6 +116,19 @@
   
   .apresentationCardContent{
     flex-direction: row;
+  }
+
+
+}
+
+/* Smartphones pequenos (até ~480px) */
+@media screen and (max-width: 480px) {
+  .apresentationSvgSmall{
+    display: none;
+  }
+
+  .apresentationSvgVerySmall{
+    display: block;
   }
 }
 

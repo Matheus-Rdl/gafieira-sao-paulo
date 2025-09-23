@@ -5,8 +5,8 @@ export default function About() {
     <div className={`${styles.about}`}>
       <h1 className={`${styles.aboutTitle} title-section`}>Quem somos nós</h1>
 
-      <div class={styles.aboutTeachers}>
-        <div class={styles.aboutPety}>
+      <div className={styles.aboutTeachers}>
+        <div className={styles.aboutPety}>
           <div>
             <h3>
               Pety <br/> (Thiago Peterson)
@@ -26,7 +26,7 @@ export default function About() {
         <div class={styles.aboutImgCouple}>
           <img src="../../public/casal-exemplo.png" alt="" />
         </div>
-        <div class={styles.aboutVan}>
+        <div className={styles.aboutVan}>
           <div>
             <h3>
               Vanesinha <br/> (Vanessa Macedo)
@@ -47,7 +47,7 @@ export default function About() {
         </div>
       </div>
 
-      <div class={styles.aboutText}>
+      <div className={styles.aboutText}>
         <p>
           Esses dois artistas fazem um grande trabalho em São Paulo com seus
           Grupos de Estudos regulares, eventos, projetos e ações em prol do

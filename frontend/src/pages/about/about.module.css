@@ -13,6 +13,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 3em;
 }
 
 .aboutPety,
@@ -80,6 +81,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1em;
+    margin-top:8em;
   }
 
   .aboutPety,
@@ -100,5 +102,19 @@
   .aboutVanText p {
     text-align: right;
     width: 50%;
+  }
+}
+
+/* Smartphones pequenos (até ~480px) */
+@media screen and (max-width: 480px) {
+  .aboutTitle{
+    margin-top: 2em;
+  }
+}
+
+/* Smartphones pequenos (até ~480px) */
+@media screen and (max-width: 480px) {
+    .aboutTitle{
+    margin-top: 2.5em;
   }
 }
