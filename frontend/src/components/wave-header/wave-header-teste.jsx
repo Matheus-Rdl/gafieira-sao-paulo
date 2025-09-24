@@ -4,10 +4,85 @@ export default function WaveBg() {
   return (
     <div className={styles.wave}>
       <svg
-        className={styles.waveSvgMediumTop}
+        className={styles.waveSvgMedium}
         viewBox="0 0 1440 390"
         preserveAspectRatio="none"
       >
+        <path
+          d="
+            M0,390
+            C180,360
+            462,333
+            731,360
+            C1097,400
+            1275,340
+            1440,340
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#800100"
+        />
+        <path
+          d="
+            M0,380
+            C180,350
+            462,323
+            731,361
+            C1097,400
+            1275,346
+            1440,350
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#1eb483"
+        />
+        <path
+          d="
+            M0,320
+            C200,270
+            400,340
+            650,295
+            C900,250
+            1200,335
+            1440,323
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#800100"
+        />
+        <path
+          d="
+            M0,320
+            C200,280
+            400,350
+            650,300
+            C900,250
+            1200,330
+            1440,310
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#ff7700"
+        />
+        <path
+          d="
+            M0,265
+            C100,230
+            300,310
+            500,270
+            C700,240
+            1100,290
+            1440,270
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#800100"
+        />
         <path
           d="
             M0,250
@@ -86,44 +161,65 @@ export default function WaveBg() {
       </svg>
 
       <svg
-        className={styles.waveSvgMediumBottom}
+        className={styles.waveSvgLargeBottom}
         viewBox="0 0 1440 390"
         preserveAspectRatio="none"
       >
- <path
-            d="
+        <path
+          d="
             M 0 390 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 270 C 1100 290 700 240 500 270 C 300 300 113 261 0 269 Z
           "
-            fill="#800100"
-          />
-          <path
-            d="
+          fill="#800100"
+        />
+        <path
+          d="
             M 0 377 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 270 C 1100 290 700 240 500 270 C 300 300 111 262 0 280 Z
           "
-            fill="#ff7700"
-          />
-          <path
-            d="
+          fill="#ff7700"
+        />
+        <path
+          d="
             M 0 377 C 180 360 462 333 732 351 C 1103 381 1275 340 1440 335 L 1440 302 C 1097 315 945 256 643 301 C 307 350 237 290 0 330 Z
           "
-            fill="#800100"
+          fill="#800100"
           />
-          <path
-            d="
+        <path
+          d="
             M 0 377 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 312 C 1097 315 936 268 643 301 C 307 350 237 290 0 330 Z
           "
-            fill="#1eb483"
+          fill="#1eb483"
           />
+        
+        
+        {/*
+
+        <path
+          d="
+            M0,265
+            C100,230
+            300,310
+            500,270
+            C700,240
+            1100,290
+            1440,270
+            L1440,0
+            L0,0
+            Z
+          "
+          fill="#800100"
+        />
+        */}
       </svg>
 
-      <div>
-        <svg
-          className={styles.waveSvgLargeTop}
-          viewBox="0 0 1440 390"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
+      <img src="../../public/exemplo-casal-header.png" alt="" />
+
+      <svg
+        className={styles.waveSvgLargeTop}
+        viewBox="0 0 1440 390"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="
             M0,250
             C100,230
             300,300
@@ -135,10 +231,10 @@ export default function WaveBg() {
             L0,0
             Z
           "
-            fill="#faf0ca"
-          />
-          <path
-            d="
+          fill="#faf0ca"
+        />
+        <path
+          d="
             M0,195
             C250,230
             400,175
@@ -150,16 +246,16 @@ export default function WaveBg() {
             L0,0
             Z
           "
-            fill="#800100"
-          />
-          <path
-            d="
+          fill="#800100"
+        />
+        <path
+          d="
           M 0 200 C 250 250 305 180 542 212 C 710 229 782 233 888 212 C 983 198 1138 196 1440 230 L 1440 0 L 0 0 Z
           "
-            fill="#4ECDC4"
-          />
-          <path
-            d="
+          fill="#4ECDC4"
+        />
+        <path
+          d="
           M0,300 
           c300,-205 
           368 -80 
@@ -174,10 +270,10 @@ export default function WaveBg() {
           L 0 
           0 Z
           "
-            fill="#800100"
-          />
-          <path
-            d="
+          fill="#800100"
+        />
+        <path
+          d="
           M0,300 
           c300,-200 
           368 -90 
@@ -192,43 +288,9 @@ export default function WaveBg() {
           L 0 
           0 Z
           "
-            fill="#1eb483"
-          />
-        </svg>
-
-        <img src="../../public/exemplo-casal-header.png" alt="" />
-
-        <svg
-          className={styles.waveSvgLargeBottom}
-          viewBox="0 0 1440 390"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-            M 0 390 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 270 C 1100 290 700 240 500 270 C 300 300 113 261 0 269 Z
-          "
-            fill="#800100"
-          />
-          <path
-            d="
-            M 0 377 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 270 C 1100 290 700 240 500 270 C 300 300 111 262 0 280 Z
-          "
-            fill="#ff7700"
-          />
-          <path
-            d="
-            M 0 377 C 180 360 462 333 732 351 C 1103 381 1275 340 1440 335 L 1440 302 C 1097 315 945 256 643 301 C 307 350 237 290 0 330 Z
-          "
-            fill="#800100"
-          />
-          <path
-            d="
-            M 0 377 C 180 360 462 333 731 360 C 1097 400 1275 340 1440 340 L 1440 312 C 1097 315 936 268 643 301 C 307 350 237 290 0 330 Z
-          "
-            fill="#1eb483"
-          />
-        </svg>
-      </div>
+          fill="#1eb483"
+        />
+      </svg>
     </div>
   );
 }

@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: 2.5%;
-  z-index: 2;
+  z-index: 100;
 }
 
 .header h1, .header h2,.header h3{

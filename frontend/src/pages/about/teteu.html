@@ -2,58 +2,29 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texto com fundo adaptável</title>
+  <title>Path com Imagem</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      position: relative;
-      width: 100%;
+    .img{
+      width: 50%;
       height: 300px;
-      background: beige;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .bg-shape {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 150px;
-      background: teal;
-      clip-path: ellipse(70% 100% at 50% 100%); /* só pra dar um formato curvado */
-    }
-
-    .texto {
-      position: relative;
-      font-size: 18px;
-      padding: 10px 15px;
-      z-index: 1;
-    }
-
-    /* fundo dinâmico só atrás do texto */
-    .texto::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: white; /* cor de contraste */
-      mix-blend-mode: difference; /* mistura com o que está atrás */
-      z-index: -1;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="bg-shape"></div>
-    <div class="texto">
-      Esse texto adapta o fundo conforme a cor atrás 🪄
-    </div>
-  </div>
+  <svg width="100%" height="400" viewBox="0 0 1440 390" preserveAspectRatio="none">
+    <defs>
+      <!-- define um padrão que usa uma imagem -->
+      <pattern id="imgPattern" patternUnits="userSpaceOnUse" width="1440" height="390">
+        <image class="img" alt="TESTE" href="../../../public/exemplo-casal-header.png" x="100" y="0" preserveAspectRatio="xMidYMid slice" />
+      </pattern>
+    </defs>
+
+    <!-- path preenchido pela imagem -->
+    <path
+      d="M0,380 C180,350 462,323 731,361 C1097,400 1275,346 1440,350 L1440,0 L0,0 Z"
+      fill="url(#imgPattern)"
+    />
+  </svg>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.aboutContainer{
+.aboutContainer {
   width: 100%;
   height: 60%;
   left: 0;
@@ -8,12 +8,15 @@
   z-index: -1;
 }
 
-.aboutSvgLarge, .aboutSvgSmall{
+.aboutSvgLarge,
+.aboutSvgSmall,
+.aboutSvgVerySmall {
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
-.aboutSvgSmall{
+.aboutSvgSmall,
+.aboutSvgVerySmall {
   display: none;
 }
 
@@ -42,7 +45,7 @@
 }
 
 .aboutPetyText,
-.aboutVanText{
+.aboutVanText {
   display: flex;
   justify-content: space-between;
 }
@@ -77,14 +80,14 @@
   width: 100%;
 }
 
-.aboutText{ 
+.aboutText {
   background-color: rgb(250, 240, 202, 0.5);
-  padding: .1em 1em;
+  padding: 0.1em 1em;
   border-radius: 1em;
 }
 
 .aboutText p {
-  display: inline-block; 
+  display: inline-block;
   font-size: large;
   text-align: center;
   margin: 1em 0;
@@ -108,7 +111,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1em;
-    margin-top:8em;
+    margin-top: 8em;
   }
 
   .aboutPety,
@@ -131,24 +134,26 @@
     width: 50%;
   }
 
-  .aboutSvgLarge{
+  .aboutSvgLarge {
     display: none;
   }
-  .aboutSvgSmall{
+  .aboutSvgSmall {
     display: block;
   }
 }
 
 /* Smartphones pequenos (até ~480px) */
 @media screen and (max-width: 480px) {
-  .aboutTitle{
+  .aboutTitle {
     margin-top: 2em;
   }
-}
-
-/* Smartphones pequenos (até ~480px) */
-@media screen and (max-width: 480px) {
-    .aboutTitle{
-    margin-top: 2.5em;
+  .aboutSvgSmall {
+    display: none;
+  }
+  .aboutSvgVerySmall {
+    display: block;
+  }
+  .aboutContainer {
+    bottom: -22%;
   }
 }

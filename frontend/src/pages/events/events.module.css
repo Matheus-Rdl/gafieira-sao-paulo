@@ -1,0 +1,10 @@
+.events {
+  margin-block: 6em;
+  padding: 0 15%;
+  position: relative;
+}
+
+.eventsTitle {
+  text-align: center;
+  color: #800100;
+}

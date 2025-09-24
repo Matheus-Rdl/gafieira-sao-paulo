@@ -20,6 +20,7 @@
   margin-block: 2em;
   padding: 0 0 0 15%;
   position: relative;
+  
 }
 
 .imgExample {
@@ -35,8 +36,7 @@
 .apresentationTitle {
   width: 100;
   text-align: center;
-  color: #1eb483;
-  text-shadow: 1px 1px #800100;
+  color: #800100;
   margin: 0 15% 1em 0;
 }
 
@@ -53,6 +53,9 @@
 
 .textApresentation {
   width: 40%;
+  background-color: rgb(250, 240, 202, 0.5);
+  padding: 0.1em 1em;
+  border-radius: 1em;
 }
 
 .textApresentation p{
