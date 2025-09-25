@@ -42,6 +42,9 @@
 .aboutPety,
 .aboutVan {
   width: 60%;
+  background-color: rgb(250, 240, 202, 0.5);
+  padding: 1em .1em;
+  border-radius: 1em;
 }
 
 .aboutPetyText,
@@ -81,6 +84,7 @@
 }
 
 .aboutText {
+  margin-block: .5em;
   background-color: rgb(250, 240, 202, 0.5);
   padding: 0.1em 1em;
   border-radius: 1em;
@@ -145,7 +149,7 @@
 /* Smartphones pequenos (até ~480px) */
 @media screen and (max-width: 480px) {
   .aboutTitle {
-    margin-top: 2em;
+    margin-top: 3em;
   }
   .aboutSvgSmall {
     display: none;

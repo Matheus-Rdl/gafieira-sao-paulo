@@ -19,7 +19,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
   font-family: "Inter";
 }
 
@@ -52,7 +51,12 @@ p {
 }
 
 /* Smartphones pequenos (até ~480px) */
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+  .title-section {
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+}
 
 /* Smartphones médios (até ~768px) */
 @media screen and (max-width: 768px) {}

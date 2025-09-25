@@ -49,6 +49,7 @@
   display: flex;
   position: relative;
   gap: 2em;
+  width: 100%;
 }
 
 .textApresentation {
@@ -114,11 +115,11 @@
 @media screen and (max-width: 768px) {
   .textApresentation {
     margin-top: 250px;
-    width: 100%;
+    width: 85%;
   }
   
   .apresentationCardContent{
-    flex-direction: row;
+    flex-direction: column;
   }
 
 

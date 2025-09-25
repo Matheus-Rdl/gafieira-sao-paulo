@@ -58,9 +58,9 @@ export default function Methodology() {
           <p>
             Fundamentalmente, acreditamos em um modelo de ensino e aprendizagem
             <strong>centrado no aluno</strong>, onde ele é o
-            <strong>protagonista do seu processo de aprendizado.</strong> Ou
+            <strong> protagonista do seu processo de aprendizado.</strong> Ou
             seja, em nossas aulas, o aluno é incentivado a
-            <u>pensar, criar e questionar</u>. Nossa aula é sempre baseada em
+            <u> pensar, criar e questionar</u>. Nossa aula é sempre baseada em
             fornecer <u>ferramentas</u> para que o aluno possa desenvolver
             melhor sua própria dança, conectar-se com a essência do samba e
             alcançar novos níveis. Acreditamos em um corpo que dança e sente, e
@@ -68,13 +68,6 @@ export default function Methodology() {
           </p>
         </div>
         <div className={styles.methodologyTextRight}>
-          <div className={styles.methodologyContainer}>
-            <svg
-              className={styles.methodologySvgLarge}
-              viewBox="0 0 1000 900"
-              preserveAspectRatio="none"
-            ></svg>
-          </div>
           <img src="../../public/black-screen.jpg" alt="" />
           <p>
             Para iniciantes, buscamos incentivar a<strong>construção</strong> de
