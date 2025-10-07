@@ -1,6 +1,6 @@
 import styles from "./wave-header.module.css";
 
-export default function WaveBg() {
+export default function WaveBg1() {
   return (
     <div className={styles.wave}>
       <svg

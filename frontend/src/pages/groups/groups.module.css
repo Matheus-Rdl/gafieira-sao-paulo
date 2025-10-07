@@ -1,6 +1,101 @@
 .groupsTitle {
   text-align: center;
-  color: #f25900;
-  text-shadow: 1px 1px black;
-  margin-bottom: .5em;
+  color: #800100;
+  margin-bottom: 0.5em;
+}
+
+.groupsContent {
+  width: 90%;
+  display: flex;
+  margin-top: 10em;
+  margin: 10em 5% 0 5%;
+}
+
+.groupsTable {
+  border-radius: 1em;
+  border: #1eb483 5px solid;
+  border-collapse: separate;
+  border-spacing: 3.5px;
+  width: 75%;
+  font-size: x-large;
+}
+
+.groupsTable thead tr td {
+  padding: 1em 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.groupsTable thead tr td:not(.groupsTableDays, .groupsTableLastCollum) {
+  background-color: #ff7700;
+}
+
+.groupsTable tbody tr td:not(.groupsTableDays, .groupsTableLastCollum) {
+  padding: 0.8em 1em;
+  text-align: center;
+  background-color: #fe861d;
+}
+
+.groupsTableDays {
+  background-color: #800100;
+  color: #faf0ca;
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
+
+.groupsTableBorderLeftTop {
+  border-top-left-radius: 0.5em;
+}
+
+.groupsTableBorderRightTop {
+  border-top-right-radius: 0.5em;
+}
+
+.groupsTableBorderRightBottom {
+  border-bottom-right-radius: 0.5em;
+}
+
+.groupsTableBorderLeftBottom {
+  border-bottom-left-radius: 0.5em;
+}
+
+.groupsTableLastCollum {
+  background-color: #1eb483;
+  padding: 1em 0.5em;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+/* Smartphones médios (até ~768px) */
+@media screen and (max-width: 768px) {
+  .groupsTable {
+    width: 100%;
+    font-size: large;
+  }
+}
+
+/* Smartphones pequenos (até ~480px) */
+@media screen and (max-width: 480px) {
+  .groupsContent {
+    margin-inline: 1%;
+    width: 98%;
+  }
+  .groupsTable thead tr td {
+    padding: .5em 1em;
+  }
+  .groupsTable tbody tr td:not(.groupsTableDays, .groupsTableLastCollum) {
+    padding: 0.3em .5em;
+  }
+  .groupsTableDays {
+    padding: 0.5em 0.5em;
+  }
+  .groupsTableLastCollum {
+    padding: .5em 0.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .groupsTable {
+    font-size: small;
+  }
 }

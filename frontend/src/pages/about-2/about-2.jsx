@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 
-export default function About() {
+export default function About2() {
   return (
     <div className={`${styles.about}`}>
       <div className={styles.aboutContainer}>

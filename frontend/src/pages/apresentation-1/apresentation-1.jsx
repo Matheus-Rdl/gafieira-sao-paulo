@@ -2,7 +2,7 @@ import VideoCarousel from "../../components/video-carousel/video-carousel";
 import VideoRow from "../../components/video-row/video-row";
 import styles from "./apresentation.module.css";
 
-export default function Apresentation() {
+export default function Apresentation1() {
   return (
     <div className={`${styles.apresentation}`}>
       <div className={styles.apresentationContainer}>

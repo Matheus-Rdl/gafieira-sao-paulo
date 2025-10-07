@@ -1,0 +1,87 @@
+.wave {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.wave .waveSvgMediumTop,
+.wave .waveSvgMediumBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.wave .waveSvgMediumTop {
+  z-index: 4;
+}
+
+.wave .waveSvgMediumBottom {
+  z-index: 6;
+}
+
+/*
+.wave .waveSvgLarge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+  */
+
+.wave .waveSvgLargeTop,
+.wave .waveSvgLargeBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.wave .waveSvgLargeTop {
+  z-index: 4;
+}
+
+.wave .waveSvgLargeBottom {
+  z-index: 6;
+}
+
+.wave img {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: 5;
+  transform: translateX(50%);
+  width: 250px;
+  margin-bottom: 7.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .wave .waveSvgMediumTop {
+    display: block;
+  }
+
+  .wave .waveSvgMediumBottom {
+    display: block;
+  }
+
+  .wave .waveSvgLargeTop {
+    display: none;
+  }
+
+  .wave .waveSvgLargeBottom {
+    display: none;
+  }
+}
+
+/* Smartphones médios (até ~768px) */
+@media screen and (max-width: 768px) {
+  .wave img {
+    width: 200px;
+  }
+}
+
+/* Smartphones pequenos (até ~480px) */
+@media screen and (max-width: 480px) {
+  .wave img {
+    width: 180px;
+  }
+}

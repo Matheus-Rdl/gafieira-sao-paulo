@@ -1,0 +1,9 @@
+-ver como os usuários vao pagar os eventos
+-deixar o site mais resumido, focando mais em design, mais dinamico(usuários não gostam de ler)
+-focar em como vou fazer o menu do site 
+
+--ideias do menu
+estilizado curvas de um lado e menu do outro
+menu reto (row)
+menu solto (entre as curvas)
+foto no meio
