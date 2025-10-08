@@ -1,4 +1,5 @@
-import styles from './groups.module.css'
+import Testimonials from "../testimonials/testimonials";
+import styles from "./groups.module.css";
 
 export default function Groups() {
   return (
@@ -10,7 +11,11 @@ export default function Groups() {
         <table className={styles.groupsTable}>
           <thead>
             <tr>
-              <td className={` ${styles.groupsTableDays} ${styles.groupsTableBorderLeftTop}`}>Dias da semana</td>
+              <td
+                className={` ${styles.groupsTableDays} ${styles.groupsTableBorderLeftTop}`}
+              >
+                Dias da semana
+              </td>
               <td>Horário</td>
               <td className={styles.groupsTableBorderRightTop}>Nivel</td>
             </tr>
@@ -47,18 +52,30 @@ export default function Groups() {
               <td>Intermediário**</td>
             </tr>
             <tr>
-              <td className={`${styles.groupsTableDays} ${styles.groupsTableBorderLeftBottom}`}>Quinta</td>
+              <td
+                className={`${styles.groupsTableDays} ${styles.groupsTableBorderLeftBottom}`}
+              >
+                Quinta
+              </td>
               <td>20h30 às 22h</td>
-              <td className={styles.groupsTableBorderRightBottom}>Avançado**</td>
+              <td className={styles.groupsTableBorderRightBottom}>
+                Avançado**
+              </td>
             </tr>
             <tr>
               <td colspan="3" className={styles.groupsTableLastCollum}>
-                *Rua Capri,12, Pinheiros | **Rua Simão Alvares, 714, Vl. Madalena<br></br>
+                *Rua Capri,12, Pinheiros | **Rua Simão Alvares, 714, Vl.
+                Madalena<br></br>
                 Mais informações e matricula (11) 94025-9285
               </td>
             </tr>
           </tbody>
         </table>
+        {/*
+        */}
+        <div className={styles.groupsTestimonials}>
+          <Testimonials/>
+        </div>
       </div>
     </div>
   );

@@ -2,29 +2,113 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Path com Imagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe</title>
   <style>
-    .img{
-      width: 50%;
-      height: 300px;
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px;
+    }
 
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px 60px;
+      justify-items: center;
+      max-width: 900px;
+    }
+
+    .member {
+      position: relative;
+      width: 180px;
+      text-align: center;
+    }
+
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110%;
+      height: 100%;
+      background-color: #e74c00;
+      z-index: 1;
+    }
+
+    /* Formas diferentes para cada pessoa */
+    .shape1 { clip-path: path("M0,60 C40,0 140,0 180,80 C160,160 20,160 0,60 Z"); }
+    .shape2 { clip-path: ellipse(60% 45% at 50% 50%); }
+    .shape3 { clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%); }
+    .shape4 { clip-path: circle(48% at 50% 50%); }
+    .shape5 { clip-path: path("M30,0 C160,20 160,160 20,180 C0,100 10,40 30,0 Z"); }
+    .shape6 { clip-path: ellipse(55% 50% at 50% 50%); }
+    .shape7 { clip-path: polygon(0 15%, 100% 0%, 90% 85%, 10% 100%); }
+    .shape8 { clip-path: path("M 0 53 C 50 -10 106 35 113 65 C 143 -40 121 -52 63 -23 Z"); }
+
+    .member img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      border-radius: 10px;
+      filter: grayscale(100%);
+      object-fit: cover;
+    }
+
+    .member p {
+      margin-top: 8px;
+      font-weight: 500;
+      color: #003366;
     }
   </style>
 </head>
 <body>
-  <svg width="100%" height="400" viewBox="0 0 1440 390" preserveAspectRatio="none">
-    <defs>
-      <!-- define um padrão que usa uma imagem -->
-      <pattern id="imgPattern" patternUnits="userSpaceOnUse" width="1440" height="390">
-        <image class="img" alt="TESTE" href="../../../public/exemplo-casal-header.png" x="100" y="0" preserveAspectRatio="xMidYMid slice" />
-      </pattern>
-    </defs>
 
-    <!-- path preenchido pela imagem -->
-    <path
-      d="M0,380 C180,350 462,323 731,361 C1097,400 1275,346 1440,350 L1440,0 L0,0 Z"
-      fill="url(#imgPattern)"
-    />
-  </svg>
+  <section class="team">
+    <div class="member">
+      <div class="shape shape1"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Belinha">
+      <p>Belinha</p>
+    </div>
+    <div class="member">
+      <div class="shape shape2"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Carol">
+      <p>Carol</p>
+    </div>
+    <div class="member">
+      <div class="shape shape3"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Felipe">
+      <p>Felipe</p>
+    </div>
+    <div class="member">
+      <div class="shape shape4"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Jean">
+      <p>Jean</p>
+    </div>
+    <div class="member">
+      <div class="shape shape5"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Marcio">
+      <p>Marcio</p>
+    </div>
+    <div class="member">
+      <div class="shape shape6"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Mylena">
+      <p>Mylena</p>
+    </div>
+    <div class="member">
+      <div class="shape shape7"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Leo Fortes">
+      <p>Leo Fortes</p>
+    </div>
+    <div class="member">
+      <div class="shape shape8"></div>
+      <img src="../../../public/man-exemplo-2.png" alt="Robertinha">
+      <p>Robertinha</p>
+    </div>
+  </section>
+
 </body>
 </html>

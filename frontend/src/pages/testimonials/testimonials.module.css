@@ -1,0 +1,129 @@
+.testimonials {
+  margin-left: 5%;
+  height: fit-content;
+}
+
+.testimonialsTitle {
+  text-align: center;
+  color: #1eb483;
+  text-shadow: 2px 2px black;
+  margin-bottom: 0.5em;
+}
+
+.testimonialsCard {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1em;
+  align-items: center;
+}
+
+.testimonialsCard img {
+  width: 25%;
+  max-width: 100px;
+  min-width: 75px;
+  gap: 0.3em;
+}
+
+.testimonialsBoxContent1 div,
+.testimonialsBoxContent2 div,
+.testimonialsBoxContent3 div,
+.testimonialsBoxContent4 div {
+  display: flex;
+  align-items: center;
+}
+
+.testimonialsBoxContent2 div {
+  flex-direction: row;
+}
+
+.testimonialsBoxContent3 h3,
+.testimonialsBoxContent4 h3 {
+  text-align: right;
+}
+
+.testimonialsBoxContent3 div,
+.testimonialsBoxContent4 div {
+  flex-direction: row-reverse;
+}
+
+.testimonialsBoxContent1 div p,
+.testimonialsBoxContent2 div p,
+.testimonialsBoxContent3 div p,
+.testimonialsBoxContent4 div p {
+  font-size: small;
+  text-align: center;
+}
+
+@media screen and (max-width: 1536px) {
+  .testimonialsCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonialsCard img {
+    width: 20%;
+    max-width: 80px;
+  }
+
+  .testimonialsBoxContent2 div {
+    flex-direction: row-reverse;
+  }
+
+  .testimonialsBoxContent3 div {
+    flex-direction: row;
+  }
+  .testimonialsBoxContent2 h3 {
+    text-align: right;
+  }
+
+  .testimonialsBoxContent3 h3 {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .testimonialsCard {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .testimonialsBoxContent2 div {
+    flex-direction: row;
+  }
+
+  .testimonialsBoxContent3 div,
+  .testimonialsBoxContent4 div {
+    flex-direction: row-reverse;
+  }
+  .testimonialsBoxContent2 h3 {
+    text-align: left;
+  }
+  .testimonialsBoxContent3 h3,
+  .testimonialsBoxContent4 h3 {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonialsCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonialsBoxContent2 div {
+    flex-direction: row-reverse;
+  }
+
+  .testimonialsBoxContent3 div {
+    flex-direction: row;
+  }
+  .testimonialsBoxContent2 h3 {
+    text-align: right;
+  }
+
+  .testimonialsBoxContent3 h3 {
+    text-align: left;
+  }
+}
