@@ -1,10 +1,68 @@
 .events {
   margin-block: 6em;
-  padding: 0 15%;
+  padding: 0 ;
   position: relative;
 }
 
 .eventsTitle {
   text-align: center;
   color: #800100;
+  text-shadow: 1px 1px 1px black;
+}
+
+.eventsSubTitle{
+  font-family: "TheBoldFont", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+  color: #800100;
+  font-size: x-large;
+}
+
+.eventsContentBox{
+  display: flex;
+  overflow-x: auto;
+  border: 2px solid #800100;
+  padding-block: 2em;
+}
+
+.eventsContentCard{
+  width: 300px;
+  border-right: 2px solid #800100;
+}
+
+.eventsContentCard div:not(.eventsContentCardText){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventsContentCard img{
+  max-width: 250px;
+  margin: .5em 1em 1em 1em;
+  border-radius: .5em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.eventsContentCard img:hover{
+  transform: scale(1.1);
+}
+
+.eventsContentCardText{
+  padding: 1em 2em;
+  font-size: medium;
+}
+
+.title{
+  font-size: larger;
+  text-align: center;
+}
+.subtitle{
+  text-align: center;
+  font-size: large;
+}
+
+.description{
+  white-space: pre-line;
 }

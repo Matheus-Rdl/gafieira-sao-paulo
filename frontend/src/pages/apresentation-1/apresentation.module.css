@@ -6,6 +6,7 @@
   z-index: -1;
 }
 
+
 .apresentationSvgLarge, .apresentationSvgSmall, .apresentationSvgVerySmall {
   width: 100%;
   height: 100%; /* tira espaços extras que podem surgir */
@@ -21,6 +22,10 @@
   padding: 0 0 0 15%;
   position: relative;
   
+}
+
+.apresentation p{
+  text-indent: 1em;
 }
 
 .imgExample {

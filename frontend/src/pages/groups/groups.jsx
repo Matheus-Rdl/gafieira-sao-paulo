@@ -63,7 +63,7 @@ export default function Groups() {
               </td>
             </tr>
             <tr>
-              <td colspan="3" className={styles.groupsTableLastCollum}>
+              <td colSpan="3" className={styles.groupsTableLastCollum}>
                 *Rua Capri,12, Pinheiros | **Rua Simão Alvares, 714, Vl.
                 Madalena<br></br>
                 Mais informações e matricula (11) 94025-9285

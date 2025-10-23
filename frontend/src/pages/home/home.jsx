@@ -16,17 +16,17 @@ export default function Home() {
        */}
       <Apresentation2 />
       {/*
-      <About1/>
       */}
       {/*
-      <About2 />
+       <About1/>
        */}
 
       <Groups/>
+      <About2 />
 
-      {/*
       <Methodology/>
       <Events/>
+      {/*
       */}
       {/*<Groups/>*/}
     </div>
